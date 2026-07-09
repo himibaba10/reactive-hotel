@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AboutSection() {
   return (
@@ -15,8 +15,7 @@ export default function AboutSection() {
             stones, ensuring that every cabin is integrated harmoniously with the surrounding woodland.
           </p>
           <p className='text-sm sm:text-base text-slate dark:text-linen/75 leading-relaxed'>
-            Every detail has been thoughtfully crafted to reduce our environmental impact—running on 100% solar power and sourcing all ingredients directly from our kitchen gardens and local
-            foragers.
+            Every detail has been thoughtfully crafted to reduce our environmental impact—running on 100% solar power and sourcing all ingredients directly from our kitchen gardens and local foragers.
           </p>
           <div className='pt-4'>
             <Link
@@ -33,11 +32,15 @@ export default function AboutSection() {
         <div className='relative grid grid-cols-12 gap-4 h-[420px] sm:h-[480px]'>
           {/* Base Image */}
           <div className='relative col-span-8 h-full rounded-2xl overflow-hidden shadow-md' data-aos='fade-up' data-aos-delay='200'>
-            <Image src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000' alt='Luxury forest bath' fill sizes="(max-width: 768px) 66vw, 50vw" className='object-cover' />
+            <Image src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000' alt='Luxury forest bath' fill sizes='(max-width: 768px) 66vw, 50vw' className='object-cover' />
           </div>
           {/* Overlapping Image */}
-          <div className='absolute right-0 bottom-6 col-span-6 w-1/2 h-[65%] rounded-2xl overflow-hidden shadow-2xl border-4 border-sand-light dark:border-charcoal/30' data-aos='fade-up' data-aos-delay='400'>
-            <Image src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1000' alt='Lush nature balcony' fill sizes="(max-width: 768px) 50vw, 33vw" className='object-cover' />
+          <div
+            className='absolute right-0 bottom-6 col-span-6 w-1/2 h-[65%] rounded-2xl overflow-hidden shadow-2xl border-4 border-sand-light dark:border-charcoal/30'
+            data-aos='fade-up'
+            data-aos-delay='400'
+          >
+            <Image src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1000' alt='Lush nature balcony' fill sizes='(max-width: 768px) 50vw, 33vw' className='object-cover' />
           </div>
         </div>
       </div>

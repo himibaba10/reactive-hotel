@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { Sparkles } from 'lucide-react';
+import Link from 'next/link';
 import BookingWidget from '../BookingWidget';
 
 export default function HeroSection() {
@@ -12,7 +12,10 @@ export default function HeroSection() {
       <div className='absolute inset-0 bg-black/60 backdrop-brightness-75' />
 
       <div className='relative z-10 max-w-5xl mx-auto px-6 text-center text-linen flex flex-col items-center gap-6 pt-16 pb-28 drop-shadow-xl'>
-        <div className='inline-flex items-center gap-2 bg-linen/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-linen/20 text-xs font-semibold uppercase tracking-widest text-sand-light shadow-md' data-aos='fade-up'>
+        <div
+          className='inline-flex items-center gap-2 bg-linen/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-linen/20 text-xs font-semibold uppercase tracking-widest text-sand-light shadow-md'
+          data-aos='fade-up'
+        >
           <Sparkles size={14} className='text-sand' />
           <span>Voted Top Wilderness Resort</span>
         </div>
@@ -27,16 +30,10 @@ export default function HeroSection() {
         </p>
 
         <div className='flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto' data-aos='fade-up' data-aos-delay='300'>
-          <Link
-            href='/rooms'
-            className='btn-primary text-center'
-          >
+          <Link href='/rooms' className='btn-primary text-center'>
             View Our Rooms
           </Link>
-          <Link
-            href='/contact'
-            className='btn-secondary text-center'
-          >
+          <Link href='/contact' className='btn-secondary text-center'>
             Contact Us
           </Link>
         </div>
