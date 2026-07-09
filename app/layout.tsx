@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   description: 'Experience premium, eco-friendly luxury nestled deep within a sunlit, plant-filled forest. Reconnect with nature at Verdant Haven Resort.',
 };
 
-import { ThemeProvider } from './components/ThemeProvider';
 import AosInit from './components/AosInit';
+import { ThemeProvider } from './components/ThemeProvider';
 
 export default function RootLayout({
   children,

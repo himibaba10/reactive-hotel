@@ -23,6 +23,8 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  if (pathname.startsWith('/admin')) return null;
+
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Our Rooms', href: '/rooms' },

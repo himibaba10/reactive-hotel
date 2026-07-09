@@ -2,8 +2,12 @@
 
 import Link from "next/link";
 import { Compass, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname.startsWith('/admin')) return null;
 
   return (
     <footer className="bg-charcoal text-linen/90 pt-16 pb-8 border-t border-charcoal/50">
