@@ -1,9 +1,13 @@
+import GalleryHeroSection from '../components/gallery/GalleryHeroSection';
+import GalleryGridSection from '../components/gallery/GalleryGridSection';
+import CTASection from '../components/home/CTASection';
+
 export default function GalleryPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen font-sans">
-      <main className="text-center">
-        <h1 className="text-2xl font-bold">Hello gallery page</h1>
-      </main>
+    <div className='flex flex-col min-h-screen w-full bg-white dark:bg-charcoal'>
+      <GalleryHeroSection />
+      <GalleryGridSection />
+      <CTASection />
     </div>
   );
 }
