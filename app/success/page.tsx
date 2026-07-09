@@ -1,8 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import { CheckCircle2, CalendarDays, ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 export default function SuccessPage() {
-  const bookingId = `VH-${Math.floor(1000 + Math.random() * 9000)}`;
+  const [bookingId, setBookingId] = useState('');
+
+  useEffect(() => {
+    setBookingId(`VH-${Math.floor(1000 + Math.random() * 9000)}`);
+  }, []);
 
   return (
     <div className='min-h-screen bg-sand-light/30 dark:bg-[#1A1A1A] py-20 px-6 flex items-center justify-center'>
