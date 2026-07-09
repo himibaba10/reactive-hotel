@@ -8,6 +8,8 @@ export default function AdminPagesPage() {
     { title: 'Our Rooms', path: '/rooms', lastUpdated: 'Oct 05, 2026', status: 'Published' },
     { title: 'Gallery', path: '/gallery', lastUpdated: 'Oct 11, 2026', status: 'Published' },
     { title: 'Contact', path: '/contact', lastUpdated: 'Sep 15, 2026', status: 'Published' },
+    { title: 'Privacy Policy', path: '/privacy', lastUpdated: 'Oct 15, 2026', status: 'Published' },
+    { title: 'Terms of Service', path: '/terms', lastUpdated: 'Oct 15, 2026', status: 'Published' },
     { title: 'Sustainability', path: '/sustainability', lastUpdated: 'Oct 12, 2026', status: 'Draft' },
   ];
 
