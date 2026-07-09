@@ -1,26 +1,62 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafaf8;
+  --foreground: #2c352d;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, Cambria, serif;
+
+  /* Natural Palette Accent Colors */
+  --color-sage: #4a6741;
+  --color-sage-hover: #3e5637;
+  --color-sage-light: #f4f6f3;
+  --color-sand: #d4b895;
+  --color-sand-hover: #c5a782;
+  --color-sand-light: #f9f6f0;
+  --color-charcoal: #2c352d;
+  --color-slate: #5e665f;
+  --color-linen: #fafaf8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #182219;
+  --foreground: #fafaf8;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+@layer components {
+  .btn-base {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 bg-sage hover:bg-sage-hover text-linen shadow-lg hover:shadow-xl text-sm px-8 py-3.5;
+  }
+
+  .btn-primary-sm {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 bg-sage hover:bg-sage-hover text-linen shadow-md hover:shadow-lg text-xs uppercase px-5 py-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 bg-linen/15 hover:bg-linen/25 text-linen text-sm px-8 py-3.5 border border-linen/35 hover:border-linen/60 backdrop-blur-sm;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 bg-sand hover:bg-sand-hover text-charcoal text-xs uppercase px-8 py-4 shadow-xl hover:shadow-2xl;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 border border-charcoal/20 dark:border-linen/20 hover:border-sage hover:text-sage dark:hover:border-sand dark:hover:text-sand font-medium text-sm px-8 py-3 shadow-sm hover:shadow-md;
+  }
 }
