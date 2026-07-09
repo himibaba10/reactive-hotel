@@ -30,7 +30,7 @@ export default function RoomBookingSidebar({ price, roomId }: RoomBookingSidebar
         <div className='flex flex-col gap-2'>
           <label className='text-xs font-bold tracking-widest text-sage dark:text-sand uppercase'>Dates</label>
           <div className='flex items-center gap-3 bg-sand-light/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-linen/10 rounded-xl px-4 py-3'>
-            <Calendar size={18} className='text-slate dark:text-linen/60 shrink-0' />
+            <Calendar size={18} className='text-slate dark:text-linen/60 flex-shrink-0' />
             <DatePicker
               selectsRange={true}
               startDate={startDate ?? undefined}
@@ -54,7 +54,7 @@ export default function RoomBookingSidebar({ price, roomId }: RoomBookingSidebar
         <div className='flex flex-col gap-2'>
           <label className='text-xs font-bold tracking-widest text-sage dark:text-sand uppercase'>Guests</label>
           <div className='flex items-center gap-3 bg-sand-light/50 dark:bg-charcoal/50 border border-charcoal/10 dark:border-linen/10 rounded-xl px-4 py-3'>
-            <Users size={18} className='text-slate dark:text-linen/60 shrink-0' />
+            <Users size={18} className='text-slate dark:text-linen/60 flex-shrink-0' />
             <select
               value={guests}
               onChange={(e) => setGuests(Number(e.target.value))}
@@ -89,7 +89,7 @@ export default function RoomBookingSidebar({ price, roomId }: RoomBookingSidebar
       <Link href={`/checkout/${roomId}`} className='btn-primary w-full flex justify-center'>
         Reserve Now
       </Link>
-      <p className='text-center text-xs text-slate dark:text-linen/50 mt-4'>You won&apos;t be charged yet</p>
+      <p className='text-center text-xs text-slate dark:text-linen/50 mt-4'>You won't be charged yet</p>
     </div>
   );
 }

@@ -43,7 +43,7 @@ export default function RoomAmenities({ room }: RoomAmenitiesProps) {
         <ul className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           {room.features.map((feature, idx) => (
             <li key={idx} className='flex items-center gap-3'>
-              <CheckCircle2 className='text-sage dark:text-sand shrink-0' size={20} />
+              <CheckCircle2 className='text-sage dark:text-sand flex-shrink-0' size={20} />
               <span className='text-slate dark:text-linen/80'>{feature}</span>
             </li>
           ))}
