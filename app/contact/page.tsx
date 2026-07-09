@@ -1,9 +1,15 @@
+import ContactHeroSection from '../components/contact/ContactHeroSection';
+import ContactInfoSection from '../components/contact/ContactInfoSection';
+import ContactFormSection from '../components/contact/ContactFormSection';
+import FAQSection from '../components/contact/FAQSection';
+
 export default function ContactPage() {
   return (
-    <div className="flex items-center justify-center min-h-screen font-sans">
-      <main className="text-center">
-        <h1 className="text-2xl font-bold">Hello contact page</h1>
-      </main>
+    <div className='flex flex-col min-h-screen w-full'>
+      <ContactHeroSection />
+      <ContactInfoSection />
+      <ContactFormSection />
+      <FAQSection />
     </div>
   );
 }
