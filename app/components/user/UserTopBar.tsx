@@ -1,9 +1,12 @@
-import { Bell } from 'lucide-react';
+import { Bell, Menu } from 'lucide-react';
 
 export default function UserTopBar() {
   return (
-    <header className='h-20 bg-white/80 dark:bg-charcoal/80 backdrop-blur-md border-b border-charcoal/10 dark:border-linen/10 px-8 flex items-center justify-between sticky top-0 z-40'>
+    <header className='h-20 bg-white/80 dark:bg-charcoal/80 backdrop-blur-md border-b border-charcoal/10 dark:border-linen/10 px-4 md:px-8 flex items-center justify-between sticky top-0 z-40'>
       <div className='flex items-center gap-4'>
+        <button className='p-2 md:hidden text-slate dark:text-linen/70 hover:text-sage dark:hover:text-sand transition-colors'>
+          <Menu size={24} />
+        </button>
         <h2 className='font-serif text-xl font-bold text-charcoal dark:text-linen hidden sm:block'>Welcome back, John</h2>
       </div>
 

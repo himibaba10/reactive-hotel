@@ -1,17 +1,22 @@
-import { Bell, Search, UserCircle } from 'lucide-react';
+import { Bell, Menu, Search, UserCircle } from 'lucide-react';
 
 export default function AdminTopBar() {
   return (
-    <header className='bg-white/80 dark:bg-charcoal/80 backdrop-blur-md border-b border-charcoal/10 dark:border-linen/10 h-20 sticky top-0 z-10 flex items-center justify-between px-8'>
-      <div className='relative w-96 hidden md:block'>
-        <div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
-          <Search size={18} className='text-slate dark:text-linen/50' />
+    <header className='bg-white/80 dark:bg-charcoal/80 backdrop-blur-md border-b border-charcoal/10 dark:border-linen/10 h-20 sticky top-0 z-10 flex items-center justify-between px-4 md:px-8'>
+      <div className='flex items-center gap-4'>
+        <button className='p-2 md:hidden text-slate dark:text-linen/70 hover:text-sage dark:hover:text-sand transition-colors'>
+          <Menu size={24} />
+        </button>
+        <div className='relative w-96 hidden md:block'>
+          <div className='absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none'>
+            <Search size={18} className='text-slate dark:text-linen/50' />
+          </div>
+          <input
+            type='text'
+            placeholder='Search bookings, users...'
+            className='w-full pl-10 pr-4 py-2 bg-sand-light dark:bg-charcoal-light border border-charcoal/10 dark:border-linen/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage/50 text-sm text-charcoal dark:text-linen'
+          />
         </div>
-        <input 
-          type="text" 
-          placeholder="Search bookings, users..."
-          className='w-full pl-10 pr-4 py-2 bg-sand-light dark:bg-charcoal-light border border-charcoal/10 dark:border-linen/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage/50 text-sm text-charcoal dark:text-linen'
-        />
       </div>
 
       <div className='flex items-center gap-6 ml-auto'>

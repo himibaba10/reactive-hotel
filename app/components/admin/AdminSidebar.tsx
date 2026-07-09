@@ -16,7 +16,7 @@ export default function AdminSidebar() {
   ];
 
   return (
-    <aside className='w-64 bg-white dark:bg-charcoal border-r border-charcoal/10 dark:border-linen/10 h-screen fixed left-0 top-0 flex flex-col z-20'>
+    <aside className='w-64 bg-white dark:bg-charcoal border-r border-charcoal/10 dark:border-linen/10 h-screen hidden md:flex flex-col sticky top-0'>
       <div className='p-6 border-b border-charcoal/10 dark:border-linen/10'>
         <Link href="/" className='font-serif text-2xl font-bold text-charcoal dark:text-linen tracking-tight'>
           Verdant Haven
