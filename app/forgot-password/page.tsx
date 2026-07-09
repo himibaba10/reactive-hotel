@@ -18,7 +18,7 @@ export default function ForgotPasswordPage() {
         <div className='absolute inset-0 bg-charcoal/60 backdrop-blur-sm' />
       </div>
 
-      <div className='bg-white/80 dark:bg-charcoal/80 backdrop-blur-xl border border-white/50 dark:border-linen/10 rounded-3xl p-8 md:p-12 shadow-2xl w-full max-w-md mx-auto relative z-10'>
+      <div className='bg-white/80 dark:bg-charcoal/80 backdrop-blur-xl border border-white/50 dark:border-linen/10 rounded-3xl p-8 md:p-12 shadow-2xl w-full max-w-md mx-auto relative z-10' data-aos='fade-up'>
         <div className='text-center mb-8'>
           <h1 className='font-serif text-3xl font-bold text-charcoal dark:text-linen mb-2'>Reset Password</h1>
           <p className='text-slate dark:text-linen/70 text-sm'>Enter your email to receive a reset link</p>

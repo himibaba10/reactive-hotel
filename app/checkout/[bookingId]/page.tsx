@@ -30,7 +30,7 @@ export default async function CheckoutPage({ params }: { params: Promise<{ booki
 
         <div className='flex flex-col lg:flex-row gap-12'>
           {/* Left Column: Form */}
-          <div className='flex-1 flex flex-col gap-10'>
+          <div className='flex-1 flex flex-col gap-10' data-aos='fade-up'>
             
             {/* Guest Details */}
             <section>
@@ -115,7 +115,7 @@ export default async function CheckoutPage({ params }: { params: Promise<{ booki
           </div>
 
           {/* Right Column: Order Summary */}
-          <div className='w-full lg:w-96'>
+          <div className='w-full lg:w-96' data-aos='fade-up' data-aos-delay='200'>
             <div className='bg-white dark:bg-charcoal border border-charcoal/5 dark:border-linen/5 rounded-3xl p-8 shadow-xl sticky top-32'>
               <h2 className='font-serif text-xl font-bold text-charcoal dark:text-linen mb-6'>Booking Summary</h2>
               
